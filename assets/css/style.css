@@ -345,10 +345,15 @@ footer .create{
     }
 }
 
-@media (min-width:426px) and  (max-width:863px) {
+@media (min-width:446px) and  (max-width:863px) {
     .container{
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .banner span{
+        display: inline-block;
+        width: 400px;
     }
 
     .area1{
@@ -385,7 +390,7 @@ footer .create{
     }
 }
 
-@media (max-width:425px) {
+@media (max-width:445px) {
     .container{
         padding-left: 15px;
         padding-right: 10px;
@@ -423,6 +428,11 @@ footer .create{
 
     .area1 .area1--content{
         padding: 40px;
+    }
+
+    .banner span{
+        display: inline-block;
+        width: 260px;
     }
 
     .area2{
