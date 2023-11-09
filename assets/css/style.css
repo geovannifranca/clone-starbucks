@@ -18,7 +18,7 @@ header .line{
 
 
 .container{
-    max-width: 920px;
+    max-width: 950px;
     margin: auto;
 }
 
@@ -219,3 +219,244 @@ header .header--area{
 }
 
 
+
+.area3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.area3 .area3--content{
+    padding: 180px 160px;
+    background-image: url("../images/bg2.jpg");
+    background-size: cover;
+    background-position: left;
+}
+
+.area3--content .area3--text{
+    margin-top: 15px;
+    margin-bottom: 60px;
+    line-height: 25px;
+}
+
+
+.area3 .area3--img1{
+
+    background-image: url("../images/f5.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+
+
+.area4{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+
+.area4 .area4--content{
+    grid-column: 1 / 4;
+    background-color: #e8e9ee;
+    padding: 140px 140px;
+}
+
+.area4--content .area4--text{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    line-height: 25px;
+}
+
+
+.area4 .area4--img1{
+    grid-column: 4 / 9;
+    background-image: url("../images/bg3.jpg");
+    background-size: cover;
+    background-position: center; 
+
+}
+
+
+.area5{
+    background-image: url("../images/bg4.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: rgb(230, 230, 230);
+    height: 180px;
+    font-size: 11px;
+}
+
+
+footer a{
+    display:inline;
+    color: rgb(230, 230, 230);
+}
+
+footer .create{
+    margin-bottom: 20px;
+}
+
+
+@media (min-width:1170px) and (max-width:1270px) {
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width:864px) and (max-width:1169px) {
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .area1{
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area2{
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .area4 .area4--content {
+        grid-column: 1 / 5;
+    }
+
+    .area4 .area4--img1 {
+        grid-column: 5 / 9;
+    }
+
+    .area5{
+        background-image: url("../images/bg4.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+    }
+}
+
+@media (min-width:426px) and  (max-width:863px) {
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .area1{
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area2{
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .area4 .area4--content {
+        grid-column: 1 / 5;
+    }
+
+    .area4 .area4--img1 {
+        grid-column: 5 / 9;
+    }
+
+    .area1 .area1--content,
+    .area2 .area2--content,
+    .area3 .area3--content{
+        padding: 40px 100px;
+    }
+
+    .area4 .area4--content{
+        padding: 80px;
+    }
+
+    .area5{
+        background-image: url("../images/bg4.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+    }
+}
+
+@media (max-width:425px) {
+    .container{
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
+    .header--search input{
+        font-size: 16px;
+        padding: 8px 15px;
+        border: 1px solid #999;
+        outline: 0;
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .header--menu{
+        margin-left: 16px;
+    }
+
+    h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .banner .banner--images img{
+        width: 80px;
+        height: 80px;
+        border: 3px solid #117050;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    .area1{
+        grid-template-columns: 1fr;
+    }
+
+    .area1 .area1--content{
+        padding: 40px;
+    }
+
+    .area2{
+        grid-template-columns: 1fr;
+    }
+
+    .area2 .area2--content{
+        padding: 40px;
+    }
+     h2{
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .area3{
+        grid-template-columns: 1fr;
+    }
+
+    .area3 .area3--content{
+        padding: 40px;
+    }
+
+    .area4{
+        grid-template-columns: 1fr;
+    }
+
+    .area4 .area4--content{
+        padding: 40px;
+    }
+
+    .area5{
+        background-image: url("../images/bg4.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+    }
+}
